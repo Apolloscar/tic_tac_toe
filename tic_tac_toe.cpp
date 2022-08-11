@@ -42,7 +42,36 @@ void printGame(int game[])
 
 int main() {
     int game[9];
+    bool con = 1;
 
-    printGame(game);
+    while(con)
+    {
+        int inp;
+        cout << "Tic Tac Toe\n\n"
+             << "Label of spaces are:\n\n"
+             << "1 | 2 | 3\n"
+             << "----------\n"
+             << "4 | 5 | 6\n"
+             << "----------\n"
+             << "7 | 8 | 9\n\n"
+             << "Select difficulty:\n\n"
+             << "1. Easy\n"
+             << "2. Medium\n"
+             << "3. Impossible\n"
+             << "4. Quit\n\n"
+             << "Enter option #: ";
+        cin >> inp;
+
+        system("cls");
+
+        if(inp == 4)
+        {
+            cout << "Thanks for playing";
+            con = 0;
+        }
+
+    }
+
+
     return 0;
 }
